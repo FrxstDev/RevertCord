@@ -16,6 +16,10 @@
     --folder-blob-scale: var(--blob-scale);
 }
 
+[class*="winButton"] {
+  display: none !important;
+}
+
 .visual-refresh div[class^="sidebar_"] section[class^="panels_"] {
     width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 1px);
     left: var(--custom-guild-list-width);
