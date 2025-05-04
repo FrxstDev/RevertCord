@@ -32,7 +32,7 @@ Once done, open Discord.
 5. Paste the following line into the editor:
 
 ````css
-@import url("https://raw.githubusercontent.com/HackV0gel/RevertCord/refs/heads/main/RevertCord.css");
+@import url("https://raw.githubusercontent.com/HackVogel/RevertCord/refs/heads/main/RevertCord.css");
 ````
 
 ## 🗣 SUPPORT
