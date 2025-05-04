@@ -33,3 +33,7 @@ Once done, open Discord.
 
 ````css
 @import url("https://raw.githubusercontent.com/HackV0gel/RevertCord/refs/heads/main/RevertCord.css");
+````
+
+## 🗣 SUPPORT
+[Discord](https://discord.gg/purpur)
