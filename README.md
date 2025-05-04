@@ -41,5 +41,10 @@ Once done, open Discord.
 @import url("https://raw.githubusercontent.com/HackVogel/RevertCord/refs/heads/main/BetaCord.css");
 ````
 
+````css
+/* BETA (EXPERIMENTAL) WITH DISABLED CUSTOM USER PROFILE COLORS */
+@import url("https://raw.githubusercontent.com/HackVogel/RevertCord/refs/heads/main/RevertCord-without-profile-colors.css");
+````
+
 ## 🗣 SUPPORT
 [Discord](https://discord.gg/purpur)
