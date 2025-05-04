@@ -1,6 +1,12 @@
 @import url("https://raw.githubusercontent.com/HackVogel/RevertCord/refs/heads/main/RevertCord.css");
 @import url("https://ukriu.github.io/cssCord/Other/blandProfile.css");
 
+/* REMOVING THE DISCORD OWNS WINDOWBAR (04.05.2025) */
+[class*="winButton"] {
+  display: none !important;
+}
+
+
 .channelBottomBarArea_f75fb0>div {
   margin: 10px 6px 9px 6px !important;
   min-height: 60px;
