@@ -1,0 +1,58 @@
+@import url("https://scattagain.github.io/VencordStuff/css/GuildbarRevert.css");
+@import url('https://raw.githubusercontent.com/surgedevs/visual-refresh-compact-title-bar/refs/heads/main/desktop.css');
+@import url("https://raw.githubusercontent.com/Bitslayn/RepluggedAddons/main/themes/btw.bitslayn.inlineStatus/raw/main.css");
+@import url("https://minidiscordthemes.github.io/Snippets/PrivacyScreen/main.css");
+@import url("https://minidiscordthemes.github.io/Snippets/ProfileBannerHeight/main.css");
+@import url("https://minidiscordthemes.github.io/Snippets/ClippyStatus/main.css");
+@import url(https://overimagine1.github.io/old-discord-font/source.css);
+
+:root {
+    /* Only include this part if you wish to change these variables */
+    /* You can change the size but only to be less than 48px, you must change the blob scale too */
+    --guildbar-avatar-size: 48px;
+    --blob-scale: 48;
+
+    --guildbar-folder-size: var(--guildbar-avatar-size);
+    --folder-blob-scale: var(--blob-scale);
+}
+
+.visual-refresh div[class^="sidebar_"] section[class^="panels_"] {
+    width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 1px);
+    left: var(--custom-guild-list-width);
+    bottom: 0px;
+    border-radius: 0px;
+    border: none;
+}
+
+.visual-refresh nav[class*=guilds_] {
+  margin-bottom: unset;
+}
+
+[id^=message-username]+span>[aria-label^="Today at"]::before {
+  content: "Today at "
+}
+
+[class*='gifFavoriteButton_'] {
+    background-color: transparent;
+}
+
+[class*="linkPlated_"] { padding-right: 0; }
+
+[class*='membersGroup']:has([role=button]),
+[class*='member'] [class*='container']:has([class*='badges']) {
+  display: none;
+}
+
+
+[class*="lated"] {
+    & [style^="background: linear-gradient("] {
+        background: none!important;
+        & [class^="videoContainer_"], img { display: none; }
+    }
+    &[class*="selected_"]:has([style^="background: linear-gradient("]) {
+        background: var(--bg-overlay-selected,var(--background-modifier-selected))!important;
+    }
+    &:has([style^="background: linear-gradient("]) {
+        &:hover, &:focus-within { background: var(--bg-overlay-hover,var(--background-modifier-hover))!important; }
+    }
+}
